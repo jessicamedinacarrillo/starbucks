@@ -1,0 +1,162 @@
+*{
+    font-family: 'Arial', sans-serif; /* Fuente */
+    margin: 0;
+    padding: 0;
+}
+
+/* General Reset */
+body, ul, li, a {
+    list-style: none;
+    text-decoration: none;
+    /* box-sizing: border-box; */
+}
+
+/* Navbar Container */
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo img {
+    width: 100px;
+    margin-left: 20px;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: #000000; 
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #006341; /* Verde más brillante */
+}
+
+/* Right Options */
+.options .login {
+    color: #006341;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: 2px solid #006341;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: 30px;
+}
+
+.options .login:hover {
+    background-color: #006341; /* Fondo verde */
+    color: #ffffff; /* Texto blanco */
+}
+
+/* Secciones de imagenes */
+.sections{
+    margin: 3%;
+}
+
+#seccion1{
+    background: #015643;
+}
+
+#seccion2{
+    background: #212A82;
+}
+
+#seccion3{
+    background: #E50040;
+}
+
+#seccion4{
+    background: #041E13;
+}
+
+#seccion5{
+    background: #7C031C;
+}
+
+#seccion1, #seccion2, #seccion3, #seccion4, #seccion5{
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+
+.text{
+    margin: 0 auto;
+    align-content: center;
+    text-align: center;
+    line-height: 1.8;
+    font-weight: bold;
+    width: 34%;
+}
+
+.parrafo{
+    margin-top: 20px
+}
+
+.imagen1{
+    width: 50vw;
+    height: 60vh;
+    border-radius: 10px;
+}
+
+.imagen2{
+    width: 40vw;
+    height: 64vh;
+    border-radius: 10px;
+}
+
+.imagen3{
+    width: 35vw;
+    height: 58vh;
+    border-radius: 10px;
+}
+
+.imagen4{
+    width: 30vw;
+    height: 65vh;
+    border-radius: 10px;
+}
+
+.imagen5{
+    width: 48vw;
+    height: 58vh;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
