@@ -72,7 +72,7 @@ body, ul, li, a {
 
 /* Secciones de imagenes */
 .sections{
-    margin: 3%;
+    margin: 0% 3% 3% 3%;
 }
 
 #seccion1{
@@ -146,8 +146,148 @@ body, ul, li, a {
     border-radius: 10px;
 }
 
+/* Última sección */
+#seccion6 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container1, .container2 {
+    background-color: #F6BFD9; 
+    color: #D50032;
+    width: 100%;
+    max-width: 49%;
+    max-height: 50%;
+    box-sizing: border-box; /* Asegura que el padding no agrande el contenedor */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+    background-color: #98CDE4;
+    color: #003B49;
+}
+
+.img-container1, .img-container2 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-container1, .text-container2 {
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn-container1, .btn-container2 {
+    background: none;
+    border: 1px solid;
+    border-color: #003B49;
+    color: #003B49;
+    padding: 6px 15px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-bottom: 70px;
+}
+
+.btn-container1{
+    color: #D50032;
+    border-color: #D50032;
+}
+
+/* fin */
+
+/* FOOTER */
+footer {
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+i {
+    font-size: 30px;
+    color: #000000;
+    margin: 25px 0;
+}
 
 
+.footer-container {
+    display: flex;
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column{
+    margin-left: 50px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: rgb(141, 141, 141);
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #000000;
+}
+
+.separator {
+    margin: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+.footer-socials {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer-socials a {
+    margin: 0 15px;
+    color: rgb(97, 96, 96);
+    text-decoration: none;
+}
+
+.footer-socials a:hover {
+    color: #000000; /* Un verde similar a Starbucks */
+    text-decoration: none;
+}
+
+.footer-links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #777777;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    color: #777777;
+    text-align: center;
+    margin-top: 20px;
+}
 
 
 
