@@ -1,78 +1,94 @@
 *{
-    font-family: 'Arial', sans-serif; /* Fuente */
+    font-family: sans-serif, arial;
     margin: 0;
     padding: 0;
+    
 }
 
 /* General Reset */
 body, ul, li, a {
     list-style: none;
+    color: #000000;
     text-decoration: none;
-    /* box-sizing: border-box; */
 }
 
 /* Navbar Container */
-.navbar {
+header {
+    position: fixed;
+    top: 0;
+    background-color: rgb(255, 255, 255);
     padding-top: 10px;
     padding-bottom: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    position: relative;
-    top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     width: 100%;
-    z-index: 1000;
+    align-content: center;
+    z-index: 10;
 }
 
-.navbar-container {
+.navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    /* max-width: 1200px; */
-    margin: 0 auto;
 }
+
+.navbar-left, .navbar-right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
 
 /* Logo */
 .logo img {
     width: 100px;
-    margin-left: 20px;
 }
 
-/* Menu */
-.menu {
-    display: flex;
-    gap: 20px;
-}
-
-.menu li a {
-    color: #000000; 
+/* Left Options */
+.navbar-left li a {
     font-weight: bold;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 
-.menu li a:hover {
+.navbar-left li a:hover {
     color: #006341; /* Verde más brillante */
 }
 
 /* Right Options */
-.options .login {
-    color: #006341;
+.navbar-right .login, .unete {
     font-weight: bold;
     font-size: 16px;
     padding: 8px 16px;
-    border: 2px solid #006341;
+    border: 1px solid #000000;
     border-radius: 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin-right: 30px;
 }
 
-.options .login:hover {
-    background-color: #006341; /* Fondo verde */
+.unete{
+    color: white;
+    background-color: #000000;
+}
+
+.navbar-right .login:hover {
+    background-color: #015643; /* Fondo verde */
+    border-color: #015643;
     color: #ffffff; /* Texto blanco */
 }
+
+
+.navbar-right .unete:hover {
+    background-color: #015643; /* Fondo verde */
+    border-color: #015643;
+    color: #ffffff; /* Texto blanco */
+}
+
 
 /* Secciones de imagenes */
 .sections{
     margin: 0% 3% 3% 3%;
+    position: relative;  /* Asegura que el contenido no se solape con el encabezado */
+    top: 80px; 
+    margin-bottom: 14vh;
 }
 
 #seccion1{
@@ -287,6 +303,105 @@ i {
     color: #777777;
     text-align: center;
     margin-top: 20px;
+}
+
+/* Página REWARDS */
+.rewards-container{
+    display: flex;
+    /* height: calc(100vh - 60px); */
+}
+
+/* Izquierda  */
+.left-container{
+    position: fixed;
+    width: 40vw;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    box-shadow: rgb(204, 204, 204) 7px 0px 4px -4px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(0deg, rgb(29, 57, 50) 0%, rgb(10, 105, 75) 100%);
+    /* padding: 50px; */
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+#letras-rewards{
+    max-width: 300px;
+}
+
+#encabezado-izq{
+    font-size: 26pt;
+}
+
+#botones-left{
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.btn-login-izq{
+    color: white;
+    border: 1px solid white;
+    border-radius: 35px;
+    padding: 6px 12px;
+}
+
+.btn-unete-izq{
+    color: rgb(51, 51, 51);
+    background-color: white;
+    border-radius: 35px;
+    font-weight: bold;
+    padding: 6px 12px;
+}
+
+
+/* Derecha */
+.right-container{
+    margin-left: 40vw;  
+    margin-top: 8vh;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: 212529;
+    height: 100vh;  
+    flex-grow: 1;  /* Hace que la sección derecha ocupe el espacio restante */
+    box-sizing: border-box;
+}
+
+h2{
+    font-size: 1.3rem;
+}
+
+.unete-container, .cafes-y-recompensas, .estrellas-y-recompensas, .ordena-y-paga, .experiencia-llena-de-recompensas, .conoce-mas, .img-final{
+    padding: 50px;
+}
+
+.txt-unete{
+    font-weight: bold;
+}
+
+.unete-container h2{
+    font-weight: 400;
+}
+
+.cafes-y-recompensas{
+    background: rgb(241, 240, 235);
+}
+
+.ordena-y-paga{
+    background-color: rgb(237, 235, 233);
+}
+
+.conoce-mas{
+    background-color: #ecebe5;
 }
 
 
