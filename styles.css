@@ -380,31 +380,205 @@ h2{
     font-size: 1.3rem;
 }
 
+img{
+    max-width: 140px;
+    max-height: 130px;
+    width: 100%;
+    height: auto;
+}
+
 .unete-container, .cafes-y-recompensas, .estrellas-y-recompensas, .ordena-y-paga, .experiencia-llena-de-recompensas, .conoce-mas, .img-final{
     padding: 50px;
 }
+
+.imgs1, .imgs2{
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.imgs1{
+    margin-bottom: 9%;
+}
+
+.imgs2{
+    margin-top: 35px;
+}
+
 
 .txt-unete{
     font-weight: bold;
 }
 
+.unete-container{
+    width: 80%;
+    justify-self: center;
+}
+
 .unete-container h2{
     font-weight: 400;
+    margin-bottom: 30px;
+}
+
+#title-obten{
+    font-size: 1.3rem;
+}
+
+
+.img-unete{
+    width: calc(25% - 10px);  /* Establece que cada imagen ocupe el 25% del ancho del contenedor, restando el espacio de gap */
+    object-fit: cover;
+    gap: 10px;
 }
 
 .cafes-y-recompensas{
     background: rgb(241, 240, 235);
+    /* max-width: 50%; */
+}
+
+.cafes-y-recompensas-inside{
+    max-width: 50%;
+    justify-self: center;
+}
+
+.estrellas-y-recompensas .completa{
+    display: flex;
+    margin-top: 30px;
+}
+
+.estrellas-y-recompensas .completa-inside{
+    width: 60%;
+}
+
+.estrellas-y-recompensas .pasos, .img-y-text{
+    display: flex;
+    margin-left: 10px;
+}
+
+.img-y-text{
+    text-align: left;
+}
+
+.pasos{
+    width: 100%;
+}
+
+.paso{
+    content: '1';
+    color: #ffffff;
+    font-weight: 600;
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+    background-color: #003B49;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-pasos{
+    justify-items: center;
+    align-self: center;
+    max-width: 30%;
+    min-height: 50% !important;
+}
+
+.estrellas-y-recompensas h2{
+    margin-bottom: 16px;
 }
 
 .ordena-y-paga{
     background-color: rgb(237, 235, 233);
 }
 
-.conoce-mas{
-    background-color: #ecebe5;
+.ordena-y-paga .fila1, .ordena-y-paga .fila2, .fila1 .item, .fila2 .item{
+    display: flex;
+}
+
+.fila1 .item, .fila2 .item{
+    margin: 15px;
+    align-items: center;
+}
+
+.fila1 .item img, .fila2 .item img{
+    width: 30%;
+}
+
+.fila1 .item .estrella, .fila2 .item .estrella{
+    height: 40%;
+    width: auto;
+}
+
+.ordena-y-paga .personaliza-tu-experiencia{
+    margin-top: 40px;
+}
+
+.personaliza-tu-experiencia{
+    width: 60%;
+    justify-self: center;
+}
+
+.personaliza-tu-experiencia .text-y-gif{
+    margin-top: 20px;
+    text-align: left;
+}
+
+.text-y-gif h3{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-y-gif img{
+    margin-top: 20px;
+    max-width: 45%;
+    max-height: 30%;
+    margin-left: 20%;
+}
+
+.experiencia-llena-de-recompensas{
+    width: 65%;
+    justify-self: center;
+}
+
+.experiencia-llena-de-recompensas .img-gif{
+    max-width: 45%;
+    max-height: 50%;
+    margin: 20px 0;
+}
+
+.img-app, .img-regalo{
+    margin: 30px 0;
+}
+
+.img-regalo{
+    max-width: 35%;
+    max-height: 35%;
 }
 
 
+.conoce-mas{
+    background-color: #ecebe5;
+    justify-content: center;
+    display: flex;
+    text-align: left;
+}
+
+.conoce-mas img{
+    max-width: 30%;
+    max-height: 20%;
+}
+
+.conoce-mas h3{
+    margin-bottom: 10px;
+}
+
+.text-conoce-mas{
+    margin-left: 10px;
+    align-self: center;
+}
+
+.img-final img{
+    max-width: 30%;
+}
 
 
 
