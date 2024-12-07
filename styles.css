@@ -225,6 +225,8 @@ footer {
     color: black;
     padding: 20px 0;
     font-family: Arial, sans-serif;
+    box-shadow: 0 -3px 3px rgba(0,0,0,.1);
+    padding-top: 50px;
 }
 
 i {
@@ -264,9 +266,15 @@ i {
     color: #000000;
 }
 
-.separator {
+.separator, .separator-bebidas {
     margin: 20px 0;
     border-top: 1px solid #ccc;
+    width: 80%;
+    justify-self: center;
+}
+
+.separator-bebidas{
+    width: 100%;
 }
 
 .footer-socials {

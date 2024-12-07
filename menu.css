@@ -1,0 +1,64 @@
+
+.body{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.body-inside{
+    width: 80%;
+    justify-self: center;
+}
+
+.title-conoce-bebidas{
+    font-weight: 800;
+    font-size: 1.75rem;
+}
+
+.section-titulos{
+    margin: 3% 0%;
+    position: relative;  /* Asegura que el contenido no se solape con el encabezado */
+    top: 80px; 
+    margin-bottom: 10%;
+    width: 50%;
+}
+
+.grid-bebidas, .grid-alimentos, .grid-cafe{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.title, .text-disfrutalos{
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 1.18rem;
+}
+
+.bebida{
+    margin: 0 auto;
+}
+
+.img-bebida, .img-alimento{
+    background: #1E3932;
+    border-radius: 50%;
+    width: 160px;
+}
+
+section .img-alimento{
+    margin: 0 auto;
+    width: 170px;
+}
+
+.img-bebida img{
+    width: 150px;
+    height: 150px;
+}
+
+.item-text{
+    /* justify-self: center; */
+    text-align: center;
+    margin: 20px 0px;
+    font-weight: 600;
+    font-size: 1.18rem;
+}
