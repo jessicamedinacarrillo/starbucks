@@ -10,22 +10,48 @@
     <title>Menu | Starbucks</title>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <nav class="navbar">
             <nav>
                 <ul class="navbar-left">
-                    <li><a href="#" class="logo"><img src="https://1000marcas.net/wp-content/uploads/2019/12/Starbucks-Logo.png" alt="Starbucks Logo"></a></li>
+                    <li><a href="./index.html" class="logo"><img src="https://1000marcas.net/wp-content/uploads/2019/12/Starbucks-Logo.png" alt="Starbucks Logo"></a></li>
                     <li><a href="./menu.html">MENU</a></li>
                     <li><a href="./rewards.html">REWARDS</a></li>
                 </ul>
             </nav>
+            <div id="menu-icon" class="menu-icon">
+                <span>&#9776;</span> 
+            </div>
             <nav>
-                <ul class="navbar-right">
-                    <li><a href="#" >Localizar Tienda</a></li>
+                <ul id="navbar-links" class="navbar-right">
+                    <li><a href="#" ><i class="fas fa-map-marker-alt"></i>Localizar Tienda</a></li>
                     <li><a href="#" class="login">Iniciar Sesión</a></li>
                     <li><a href="#" class="unete">Únete</a></li>
                 </ul>
             </nav>
+        </nav>
+    </header> -->
+
+    <header>
+        <nav class="navbar">
+            <!-- Logo y menú hamburguesa -->
+            <ul class="navbar-left">
+                <li><a href="./index.html" class="logo"><img src="https://1000marcas.net/wp-content/uploads/2019/12/Starbucks-Logo.png" alt="Starbucks Logo"></a></li>
+            </ul>
+
+            <!-- Icono de menú hamburguesa -->
+            <div id="menu-icon" class="menu-icon">
+                <span>&#9776;</span> <!-- Esto representa el ícono hamburguesa -->
+            </div>
+
+            <!-- Enlaces del menú (se ocultan en dispositivos pequeños) -->
+            <ul id="navbar-links" class="navbar-right">
+                <li class="items-navbar item-menu"><a href="./menu.html">MENU</a></li>
+                <li class="items-navbar item-rewards"><a href="./rewards.html">REWARDS</a></li>
+                <li class="items-navbar"><a href="#"><i class="fas fa-map-marker-alt"></i> Localizar Tienda</a></li>
+                <li class="items-navbar btn-iniciar-sesion"><a href="#" class="login">Iniciar Sesión</a></li>
+                <li class="items-navbar"><a href="#" class="unete">Únete</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -130,24 +156,25 @@
     <footer>
         <div class="footer-container">
             <div class="footer-column">
-                <h4>Sobre Nosotros</h4>
-                <ul>
+                <h4 class="footer-title">Sobre Nosotros<i class="fas fa-chevron-down"></i></h4>
+                <ul class="footer-list">
                     <li><a href="#">Trabaja con nosotros</a></li>
                     <li><a href="#">Historias Starbucks</a></li>
                 </ul>
             </div>
             <div class="footer-column">
-                <h4>Atención al cliente</h4>
-                <ul>
+                <h4 class="footer-title">Atención al cliente<i class="fas fa-chevron-down"></i></h4>
+                <ul class="footer-list">
                     <li><a href="#">Contáctanos</a></li>
                     <li><a href="#">Facturas Electrónicas</a></li>
                     <li><a href="#">Formas de compra</a></li>
                 </ul>
             </div>
         </div>
-    
+
         <div class="separator"></div>
     
+        <!-- Redes Sociales -->
         <div class="footer-socials">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
@@ -155,12 +182,13 @@
             <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
     
+        <!-- Links adicionales (Accesibilidad, Aviso, etc.) -->
         <div class="footer-links">
-            <a href="#">Accesibilidad</a> | 
-            <a href="#">Aviso de Privacidad</a> | 
-            <a href="#">Boletines</a> | 
-            <a href="#">Condiciones de uso</a> | 
-            <a href="#">Mapa del sitio</a> | 
+            <a href="#">Accesibilidad</a>
+            <a href="#">Aviso de Privacidad</a>
+            <a href="#">Boletines</a>
+            <a href="#">Condiciones de uso</a>
+            <a href="#">Mapa del sitio</a>
             <a href="#">Preferencias sobre cookies</a>
         </div>
     
@@ -168,6 +196,29 @@
             <p>&copy; 2024 Starbucks. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        // script.js
+        const menuIcon = document.getElementById('menu-icon');
+        const navbarLinks = document.getElementById('navbar-links');
+
+        // Al hacer clic en el menú hamburguesa, alterna la clase 'active' para mostrar u ocultar el menú
+        menuIcon.addEventListener('click', function() {
+            navbarLinks.classList.toggle('active');
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const footerTitles = document.querySelectorAll('.footer-title i');
+            
+            footerTitles.forEach(function(icon) {
+                icon.addEventListener('click', function() {
+                    const parentColumn = icon.closest('.footer-column');
+                    parentColumn.classList.toggle('open'); // Alterna la clase "open" en el contenedor
+                });
+            });
+        });
+        
+    </script>
     
 </body>
 </html>

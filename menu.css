@@ -41,7 +41,7 @@
 
 .img-bebida, .img-alimento{
     background: #1E3932;
-    border-radius: 50%;
+    border-radius: 100%;
     width: 160px;
 }
 
@@ -61,4 +61,45 @@ section .img-alimento{
     margin: 20px 0px;
     font-weight: 600;
     font-size: 1.18rem;
+}
+
+@media (max-width: 768px) {
+    .section-titulos{
+        margin: 12% 0;
+        width: 100%;
+    }
+
+    .text-disfrutalos{
+        font-size: calc(1.0188rem + .2256vw);
+    }
+
+    .title-conoce-bebidas{
+        font-size: calc(1.075rem + .9vw);
+    }
+
+    .menu{
+        margin-top: 36%;
+    }
+
+    .grid-bebidas{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .img-bebida img{
+        width: 100px;
+        height: auto;
+    }
+    
+    section .img-alimento{
+        width: 110px;
+    }
+
+    .img-bebida, .img-alimento, section .img-alimento img{
+        width: 110px;
+        height: 110px;
+        justify-self: center;
+    }
+
+
 }
